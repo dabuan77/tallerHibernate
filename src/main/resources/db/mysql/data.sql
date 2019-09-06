@@ -41,13 +41,14 @@ INSERT IGNORE INTO pets VALUES (5, 'Iggy', '2000-11-30', 3, 4);
 INSERT IGNORE INTO pets VALUES (6, 'George', '2000-01-20', 4, 5);
 INSERT IGNORE INTO pets VALUES (7, 'Samantha', '1995-09-04', 1, 6);
 INSERT IGNORE INTO pets VALUES (8, 'Max', '1995-09-04', 1, 6);
-INSERT IGNORE INTO pets VALUES (9, 'Lucky', '1999-08-06', 5, 7);
+INSERT IGNORE INTO pets VALUES (9, 'Lucky', '1999-08-06', 5, 6);
 INSERT IGNORE INTO pets VALUES (10, 'Mulligan', '1997-02-24', 2, 8);
 INSERT IGNORE INTO pets VALUES (11, 'Freddy', '2000-03-09', 5, 9);
 INSERT IGNORE INTO pets VALUES (12, 'Lucky', '2000-06-24', 2, 10);
 INSERT IGNORE INTO pets VALUES (13, 'Sly', '2002-06-08', 1, 10);
 
-INSERT IGNORE INTO visits VALUES (1, '2010-03-04', 'rabies shot', 7 ,null);
-INSERT IGNORE INTO visits VALUES (2, '2011-03-04', 'rabies shot',8 ,null);
-INSERT IGNORE INTO visits VALUES (3, '2009-06-04', 'neutered', 8 ,null);
-INSERT IGNORE INTO visits VALUES (4, '2008-09-04', 'spayed', 7 ,null);
+INSERT IGNORE INTO visits (id, visit_date, description, pet_id) VALUES (1, '2010-03-04', 'rabies shot',7);
+INSERT IGNORE INTO visits (id, visit_date, description, pet_id) VALUES (2, '2011-03-04', 'rabies shot',8);
+INSERT IGNORE INTO visits (id, visit_date, description, pet_id) VALUES (3, '2009-06-04', 'neutered',8);
+INSERT IGNORE INTO visits (id, visit_date, description, pet_id) VALUES (4, '2008-09-04', 'spayed',7);
+

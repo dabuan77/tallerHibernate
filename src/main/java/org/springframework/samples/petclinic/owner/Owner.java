@@ -62,9 +62,6 @@ public class Owner extends Person {
     private Set<Pet> pets;
     
    
-
-
-   
     
      public void setPets(Set<Pet> pets) {
 	this.pets = pets;
@@ -150,7 +147,10 @@ public class Owner extends Person {
         return null;
     }
 
-    @Override
+    
+    
+
+	@Override
     public String toString() {
         return new ToStringCreator(this)
 
